@@ -10,6 +10,15 @@ datagroup: laura_dev_default_datagroup {
 
 persist_with: laura_dev_default_datagroup
 
+explore: user_orders {
+  from: users
+  join: order_items {
+    type: left_outer
+    relationship: one_to_many
+    sql_on: ${user_orders.id}=${order_items.user_id} ;;
+  }
+}
+
 explore: orders {}
 
 explore: order_items_extended {}
