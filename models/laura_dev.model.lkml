@@ -19,6 +19,10 @@ explore: user_orders {
   }
 }
 
+explore: prueba_master {
+  from:  orders
+}
+
 explore: orders {}
 
 explore: order_items_extended {}
