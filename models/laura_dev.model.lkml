@@ -20,7 +20,7 @@ explore: user_orders {
 }
 
 explore: prueba_master {
-  from:  orders
+  from:  order_items_extended
 }
 
 explore: orders {}
