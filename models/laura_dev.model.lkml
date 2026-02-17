@@ -2,6 +2,7 @@ connection: "carlos-looker-training"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/dashboards/*.dashboard"
 
 datagroup: laura_dev_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
